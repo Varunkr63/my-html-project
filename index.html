@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <meta name="robots" content="noindex,nofollow"/>
+   <meta name="description" content="my website using simple html and css"/>
    <title>Alpha twebsite</title>
    <style>
       
@@ -24,6 +26,18 @@
    font-size: 1.4rem;
 
  }
+ .logo img {
+  height: 50px;         /* Adjust height as needed */
+  width: auto;          /* Maintains aspect ratio */
+  display:block ;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+ 
+}
 
    </style>
 </head>
@@ -33,7 +47,7 @@
      <header>
       <div class="logo">
          <a href="#" tabindex="_blank">
-            <img src="" alt="my logo"/>
+            <img src="web logo.png" alt="my logo"/>
          </a>
       </div>
       <nav>
@@ -60,7 +74,7 @@
       <!-- hero section images -->
        <div class="hero-image">
          <figure>
-            <img src="" alt="hero section image of my webpage"
+            <img src="hero image.jpg" alt="hero section image of my webpage"
             width="500"
             height="auto"/>
 
@@ -82,8 +96,8 @@
                <progress id="html" value="100" max="100">html 100%</progress>
             </div>
             <div class="about-progress">
-               <label for="javascript">css:</label>
-               <progress id="javascript" value="100" max="100">javascript 100%</progress>
+               <label for="css">css:</label>
+               <progress id="css" value="100" max="100">css 100%</progress>
             </div>
             <div class="about-progress">
                <label for="javascript">javascript:</label>
@@ -101,46 +115,46 @@
          <h2>our services</h2>
          <div class="services-gallery" style="display: flex;">
             <figure>
-               <img src="" alt="html service image"
+               <img src="our services image.jpg" alt="html service image"  loading="lazy"
                width="200"
-               height="125">
+               height="125"/>
                <figcaption>Html website dev</figcaption>
             </figure>
 
             <figure>
-               <img src="" alt="CSS service image"
+               <img src="our services.jpg" alt="CSS service image" loading="lazy"
                width="200"
                height="125">
                <figcaption>css web dev</figcaption>
             </figure>
             
             <figure>
-               <img src="" alt="js service image"
+               <img src="our services.jpg" alt="js service image" loading="lazy"
                width="200"
                height="125">
                <figcaption>Javascript web dev</figcaption>
             </figure>
 
             <figure>
-               <img src="" alt="mern service image"
+               <img src="our services image.jpg" alt="mern service image" loading="lazy"
                width="200"
                height="125">
                <figcaption>Mern web dev</figcaption>
             </figure>
 
-            <figure>
-               <img src="" alt="mongo db service image"
+            <!-- <figure> 
+               <img src="our services.jpg" alt="mongo db service image" loading="lazy"
                width="200"
                height="125">
                <figcaption>mongodb web dev</figcaption>
-            </figure>
+            </figure> -->
 
-            <figure>
-               <img src="" alt="mongo db service image"
+            <!-- <figure>
+               <img src="our services.jpg" alt="mongo db service image" loading="lazy"
                width="200"
                height="125">
                <figcaption>React web dev</figcaption>
-            </figure>
+            </figure> -->
 
 
          </div> 
@@ -183,7 +197,7 @@
              <section class="posdcast-section">
                <p><em>added my posdcast</em></p>
                <audio controls autoplay muted>
-                  <source src="" type="audio/mpeg">
+                  <source src="audio web.mp3" type="audio/mpeg">
                </audio>
              </section>
              <section class="blog-link-section">
@@ -207,6 +221,7 @@
                width="600" 
                height="450" 
                style="border:0;" 
+               title="gmaps location"
                allowfullscreen="" 
                loading="lazy" 
                referrerpolicy="no-referrer-when-downgrade"></iframe>
